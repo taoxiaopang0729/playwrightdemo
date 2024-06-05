@@ -23,7 +23,7 @@ jobs:
       continue-on-error: true
     - name: Generate Allure report
       if: always()
-      run: allure generate ./allure-results --clean
+      run: npm run allure:generate
     - name: Upload Allure report
       uses: actions/upload-artifact@v4
       if: always()
