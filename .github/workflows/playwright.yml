@@ -4,6 +4,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+  workflow_dispatch: # This allows the workflow to be manually triggered
 jobs:
   test:
     timeout-minutes: 60
